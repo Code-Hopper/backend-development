@@ -1,0 +1,7 @@
+Server/ backend development
+20/1/24
+HTTP , HTTP Status Code(100-199,200-299,300-399,400-499,500-599) ,
+HTTP Methods(Get, Post, Put, Patch, Delete)
+Request and Response
+RESTful API
+NPM and node enviroment
