@@ -1,0 +1,9 @@
+# ignoring
+
+# backend-1
+
+imp.txt
+
+backend-1/node_modules
+
+backend-1/package-lock.json

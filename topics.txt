@@ -4,4 +4,6 @@ HTTP , HTTP Status Code(100-199,200-299,300-399,400-499,500-599) ,
 HTTP Methods(Get, Post, Put, Patch, Delete)
 Request and Response
 RESTful API
-NPM and node enviroment
+NPM and node environment
+JSON - JavaScript Object Notation
+created our first routes on server-page
