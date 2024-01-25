@@ -14,6 +14,8 @@ let port = process.env.PORT || 3020
 
 // localhost:port  
 
+app.use(express.static("public"))
+
 app.use(router)
 
 app.listen(port,()=>{

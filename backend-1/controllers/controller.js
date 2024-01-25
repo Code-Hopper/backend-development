@@ -1,5 +1,5 @@
 let GetHome = (req, res) => {
-    res.status(200).send("Welcome to home page")
+    res.status(200).sendFile("index.html")
 }
 
 let GetAbout = (req, res) => {
