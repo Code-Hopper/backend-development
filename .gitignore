@@ -7,3 +7,5 @@ imp.txt
 backend-1/node_modules
 
 backend-1/package-lock.json
+
+backend-1/config.env

@@ -1,15 +1,21 @@
+// dependencies
 import express from "express"
+import dotenv from "dotenv"
 
-import { router } from "./router/router.js"
+// configure .env file
+dotenv.config({ path: './config.env'})
+
+// middlewares 
+import { router } from "./routers/router.js"
 
 const app = express()
 
-let port = 3021
+let port = process.env.PORT || 3020
 
 // localhost:port  
 
 app.use(router)
 
 app.listen(port,()=>{
-    console.log(`Server is Running On Port: ${port} !`)
+    console.log(`Server is Running : http://localhost:${port} !`)
 })
