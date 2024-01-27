@@ -3,7 +3,7 @@ let GetHome = (req, res) => {
 }
 
 let GetAbout = (req, res) => {
-    res.status(200).send("Welcome to About page")
+    res.status(200).sendFile("about.html")
 }
 
 let GetService = (req, res) => {
