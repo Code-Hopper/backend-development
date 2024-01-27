@@ -9,3 +9,11 @@ backend-1/node_modules
 backend-1/package-lock.json
 
 backend-1/config.env
+
+# backend-2
+
+backend-2/node_modules
+
+backend-2/package-lock.json
+
+backend-2/config.env
