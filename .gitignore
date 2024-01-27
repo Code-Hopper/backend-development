@@ -14,6 +14,8 @@ backend-1/config.env
 
 backend-2/node_modules
 
+backend-2/node_modules/http-errors/package.json
+
 backend-2/package-lock.json
 
 backend-2/config.env
