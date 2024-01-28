@@ -19,3 +19,11 @@ backend-2/node_modules/http-errors/package.json
 backend-2/package-lock.json
 
 backend-2/config.env
+
+# emojipedia
+
+emojipedia/node_modules
+
+emojipedia/package-lock.json
+
+emojipedia/config.env
