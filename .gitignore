@@ -24,6 +24,8 @@ backend-2/config.env
 
 emojipedia/node_modules
 
+emojipedia/node_modules/depd/History.md
+
 emojipedia/package-lock.json
 
 emojipedia/config.env

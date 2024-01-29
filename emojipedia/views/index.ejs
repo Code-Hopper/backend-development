@@ -1,5 +1,90 @@
 <%- include("./partials/header.ejs") -%>
 
-<h1>EmojiPedia</h1>
+    <div id="emojiContainer">
+        <div class="container-fluid">
 
-<%- include("./partials/footer.ejs") -%>
+            <div class="container text-center my-3">
+                <div class="text-center my-5">
+                    <h1>Welcome To <span class="bg-warning p-2 text-dark fw-bolder"> EmojiPedia😊 </span> </h1>
+                </div>
+
+                <!-- add emojis form -->
+
+                <!-- Button trigger modal -->
+                <div class="">
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" class="btn btn-warning fw-bolder" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Add Emoji
+                            </button>
+                        </div>
+                        <div class="col-8">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Search By Name ? ">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary" type="button">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <form class="text-start" action="/" method="post">
+                                <div class="modal-body">
+
+                                    <label class="form-label fw-bolder fs-3" for="">😊</label>
+                                    <input class="form-control" type="text" name="emoji" placeholder="Enter Emoji Icon"
+                                        required>
+                                    <label class="form-label fw-bolder fs-3" for="">Name</label>
+                                    <input class="form-control" type="text" name="emojiName"
+                                        placeholder="Enter Emoji Name" required>
+                                    <label class="form-label fw-bolder fs-3" for="">About Emoji</label>
+                                    <textarea class="form-control" placeholder="About Emoji" name="aboutEmoji" id=""
+                                        cols="30" rows="10" required></textarea>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-warning">Add This</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contaier">
+                <div class="row gap-3 justify-content-center">
+                    <% EmojiArray.map((element , index)=>{ %>
+                        <div class="col-md-3 col-12 emojiCol">
+                            <div class="card text-center p-3 border-0 shadow-lg emojiCard w-100">
+                                <h1 class="card-title">
+                                    <%= element.emoji %>
+                                </h1>
+                                <h2>
+                                    <%= element.emojiName %>
+                                </h2>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <%= element.aboutEmoji %>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <% }) %>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include("./partials/footer.ejs") -%>

@@ -1,0 +1,36 @@
+.emojiCard{
+    background-color: var(--bs-light);
+    color: var(--bs-dark);
+    transition: all 0.5s ease;
+}
+
+.emojiCard:hover{
+    background-color: var(--bs-dark) !important;
+    color: var(--bs-light) !important;
+    cursor: pointer !important;
+}
+
+.emojiCard .card-title{
+    font-size: 2.5rem;
+    transition: all 0.5s ease;
+}
+
+.emojiCard:hover .card-title{
+    font-size: 3rem;
+}
+
+.emojiCard .card-text{
+    font-size: 1rem;
+    transition: all 0.5s ease;
+}
+
+.emojiCard:hover .card-text{
+    font-size: 1.5rem;
+}
+
+.emojiCol{
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
