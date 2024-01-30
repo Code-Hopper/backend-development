@@ -78,6 +78,10 @@
                                     <p class="card-text">
                                         <%= element.aboutEmoji %>
                                     </p>
+                                    <p class="card-text">
+                                        <%= element.timeStamp %>
+                                        <button class="btn btn-danger d-none deletEmojiButton" onclick="window.location.href=`?deleteEmoji=<%= element.id %>`" > <i class="fa-solid fa-trash"></i> </button>
+                                    </p>
                                 </div>
                             </div>
                         </div>
