@@ -29,3 +29,14 @@ emojipedia/node_modules/depd/History.md
 emojipedia/package-lock.json
 
 emojipedia/config.env
+
+
+# backend-apis
+
+backend-apis/node_modules
+
+backend-apis/node_modules/depd/History.md
+
+backend-apis/package-lock.json
+
+backend-apis/config.env
