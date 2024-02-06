@@ -99,7 +99,7 @@ let PostAddCourse = (req,res) =>{
 
     data.push(newCourse)
 
-    res.status(201).json({"message":"Successfully Added Course !"})
+    res.status(201).json({"Add_message":"Successfully Added Course !"})
 }
 
 let DeleteCourse = (req,res) =>{
