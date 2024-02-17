@@ -1,5 +1,5 @@
 let GetHome = (req,res) =>{
-    res.status(200).render("index")
+    res.status(200).render("index",{ data:"" })
 }
 
 let PostHome = (req,res) =>{

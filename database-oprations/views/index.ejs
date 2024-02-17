@@ -1,4 +1,91 @@
-<%- include('./partials/header.ejs');  %>
+<%- include('./partials/header.ejs'); %>
 
 
-<%- include('./partials/footer.ejs');  %>
+    <div class="container-fluid">
+        <div class="container">
+
+            <h1 class="my-5">Data Collection Form</h1>
+
+            <div class="">
+                <form class="d-flex flex-column gap-2" action="/" method="post">
+                    <div class="row">
+                        <div class="col">
+                            <input class="form-control" type="text" name="name" placeholder="User Name" id="">
+                        </div>
+                        <div class="col d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="fe-bolder text-danger">Stream : </span>
+                                <input class="form-radio" type="radio" name="stream" name="Science" id="">
+                                <span>Science</span>
+                                <input class="form-radio" type="radio" name="stream" name="Commerce" id="">
+                                <span>Commerce</span>
+                                <input class="form-radio" type="radio" name="stream" name="Arts" id="">
+                                <span>Arts</span>
+                            </div>
+                            <div class="d-flex">
+                                <input class="form-control" type="text" placeholder="Instrested Topic" name="instrested"
+                                    id="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col d-flex">
+                            <div class="row align-items-center">
+                                <div class="col-5">
+                                    <span class="">Entrace Exam Score : </span>
+                                </div>
+                                <div class="col d-flex align-content-center">
+                                    <div class="row">
+                                        <div class="col">
+                                            <input type="number" class="form-control" placeholder="Score" name="score">
+                                        </div>
+                                        <div class="col d-flex align-items-center fw-bolder text-success">
+                                            <span> / 500</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-content-center">
+                                <div class="col-10">
+                                    <span class="text-danger">Regular Studnet</span>
+                                </div>
+                                <div class="col-2">
+                                    <input class="form-check" type="checkbox" name="regular" id=""> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <input class="form-control" type="Email" name="email" placeholder="Email" id="">
+                        </div>
+                    </div>
+                    <input class="form-control" type="tel" name="contact" placeholder="contact" id="">
+                    <textarea class="form-control" name="address" id="" cols="30" rows="10" placeholder="Address"></textarea>
+                    <div class="formCta">
+                        <button class="btn btn-success" type="submit">Submit</button>
+                        <button class="btn btn-danger" type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container">
+
+            <h1 class="my-5">All User Data</h1>
+
+            <% if(data){ %>
+
+                <% } else{ %>
+                    <div class="">
+                        <h2 class="alert  alert-danger">
+                            No User Data To Display !
+                        </h2>
+                    </div>
+                    <% } %>
+        </div>
+    </div>
+
+
+
+    <%- include('./partials/footer.ejs'); %>
