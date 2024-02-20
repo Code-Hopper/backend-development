@@ -10,8 +10,9 @@ let studentSchema = mongoose.Schema({
     Score: Number,
     regular: Boolean,
     email: String,
+    contact: String,
     address: String,
-    EntryDate: Date
+    EntryDate: String
 
 })
 

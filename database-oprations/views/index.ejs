@@ -80,7 +80,40 @@
 
             <h1 class="my-5">All User Data</h1>
 
+            <table class="table table-primary">
+            
+            <tr class="">
+                <th class="col">Name</th>
+                <th class="col">Stream</th>
+                <th class="col">Instrested</th>
+                <th class="col">Regular</th>
+                <th class="col">Email</th>
+                <th class="col">Contact</th>
+                <th class="col">Address</th>
+                <th class="col">Date</th>
+                <th class="col">Action</th>
+            </tr>
+
             <% if(data){ %>
+                    
+                <% for(let i = 0 ; i < data.length ; i++) { %>
+                    
+                    <tr class="">
+                        <th class="col"><%= data[i].name %></th>
+                        <th class="col"><%= data[i].stream %></th>
+                        <th class="col"><%= data[i].instrested %></th>
+                        <th class="col"><%= data[i].regular %></th>
+                        <th class="col"><%= data[i].email %></th>
+                        <th class="col"><%= data[i].contact %></th>
+                        <th class="col"><%= data[i].address %></th>
+                        <th class="col"><%= data[i].EntryDate %></th>
+                        <th class="col">
+                            <button class="btn btn-danger">delete</button>
+                            <button class="btn btn-warning">Update</button>
+                        </th>
+                    </tr>
+
+                <% } %>    
 
                 <% } else{ %>
                     <div class="">
@@ -88,7 +121,9 @@
                             No User Data To Display !
                         </h2>
                     </div>
-                    <% } %>
+                <% } %>
+            </table>
+
         </div>
     </div>
 
