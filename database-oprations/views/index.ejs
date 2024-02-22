@@ -99,16 +99,35 @@
                 <% for(let i = 0 ; i < data.length ; i++) { %>
                     
                     <tr class="">
-                        <th class="col"><%= data[i].name %></th>
-                        <th class="col"><%= data[i].stream %></th>
-                        <th class="col"><%= data[i].instrested %></th>
-                        <th class="col"><%= data[i].regular %></th>
-                        <th class="col"><%= data[i].email %></th>
-                        <th class="col"><%= data[i].contact %></th>
-                        <th class="col"><%= data[i].address %></th>
-                        <th class="col"><%= data[i].EntryDate %></th>
                         <th class="col">
-                            <button class="btn btn-danger">delete</button>
+                            <%= data[i].name %>
+                        </th>
+                        <th class="col">
+                            <%= data[i].stream %>
+                        </th>
+                        <th class="col">
+                            <%= data[i].instrested %>
+                        </th>
+                        <th class="col">
+                            <%= data[i].regular %>
+                        </th>
+                        <th class="col">
+                            <%= data[i].email %>
+                        </th>
+                        <th class="col">
+                            <%= data[i].contact %>
+                        </th>
+                        <th class="col">
+                            <%= data[i].address %>
+                        </th>
+                        <th class="col">
+                            <%= data[i].EntryDate %>
+                        </th>
+                        <th class="col">
+                            <%= data[i]._id %>
+                        </th>
+                        <th class="col">
+                            <a class="btn btn-danger" href="/delete/<%=data[i]._id%>">Delete</a>
                             <button class="btn btn-warning">Update</button>
                         </th>
                     </tr>

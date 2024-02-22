@@ -1,3 +1,4 @@
+import { ConnectionPoolClosedEvent } from "mongodb";
 import "../Database/conn.js"
 
 // importing models
@@ -69,4 +70,20 @@ let PostHome = async (req, res) => {
 
 }
 
-export { GetHome, PostHome } 
+let DeleteData = async (req,res) =>{
+
+    console.log(req.params)
+
+    let deleteID = req.params.deleteID
+
+    // delete the document from database
+
+    deleteID = parseInt(deleteID)
+
+    let result = await student.deleteOne( { _id : deleteID } )
+
+    console.log(result)
+
+}
+
+export { GetHome, PostHome , DeleteData } 
