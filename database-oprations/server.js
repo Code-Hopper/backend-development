@@ -2,6 +2,7 @@ import express from "express"
 import ejs from "ejs"
 import dotenv from "dotenv"
 import bodyParser from "body-parser"
+import cookieParser from "cookie-parser"
 import { router } from "./routers/router.js"
 
 
@@ -18,6 +19,8 @@ app.set("view engine","ejs")
 app.use(bodyParser.urlencoded({extended:true}))
 
 app.use(bodyParser.json())
+
+app.use(cookieParser())
 
 app.use(router)
 

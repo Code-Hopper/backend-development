@@ -7,7 +7,7 @@ let studentSchema = mongoose.Schema({
     name: String,
     stream: String,
     instrested: String,
-    Score: Number,
+    score: Number,
     regular: Boolean,
     email: String,
     contact: String,
