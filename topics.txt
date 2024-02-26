@@ -3,7 +3,23 @@ Server/ backend development
 HTTP , HTTP Status Code(100-199,200-299,300-399,400-499,500-599) ,
 HTTP Methods(Get, Post, Put, Patch, Delete)
 Request and Response
-RESTful API
+RESTful API(query parameters and path parameters)
 NPM and node environment
 JSON - JavaScript Object Notation
 created our first routes on server-page
+
+important topic required for backend development
+
+datatypes :
+string, object {key: value, key2: value2} evolve to JSON ( mostly used for inter-application communication) and BSON ( MongoDB document can be stored and read in this format), array is a collection of various data [ element, element, ..., element ], Array can be used for store linked data ( the data which has a dependency or similar characteristics ) to get the best out of an array we have to perform various array operation like ( iteration [iteration means to read each element of an array according to their index numbers, it is done by looping ex. for, forEach, map, for of], sorting [sorting means to re-arrange the elements of an array based on a condition ex. ascending/descending { we can use different algorithms like bubble sorting algo }], searching [in this method we find a certain element in an array that matched the filtred conditions ], etc. )
+
+some important syntax to know
+
+functions of all kinds ( using a function keyword, arrow function, anonymous function [this has no name, the main purpose of this function is to be called back inside of a high-order function] ),
+ternary operation ( condition ? true: false ),
+
+conditional statements of all types ( if-else, for loop ),
+
+exception handling using a try-catch block (this block is used for handling custom or pre-defined exceptions/errors),
+
+concepts of asynchronous programming (this content part of dynamic JavaScript programming that involves concepts such as the code that may run independently without disturbing any logic or code that may have been written previously or after ) to achieve this programming we have used promises or async-await syntax
